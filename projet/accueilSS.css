@@ -1,0 +1,425 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/backS1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+        /* Style pour les boutons */
+        .button-container {
+            position: fixed;
+            bottom: 0;
+            left: 40px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            left: 50px;
+            align-items: center;
+            padding: 20px 0; /* Ajout de marge en haut et en bas pour l'espacement */
+            background-color: rgba(203, 104, 104, 0.9); /* Fond semi-transparent */
+        }
+
+        .button {
+            background-color: #b8c6c1; /* Violet */
+            color: #0d32e7;
+            border: none;
+            padding: 15px 30px;
+            cursor: pointer;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+            margin-top: 400px;
+            margin-left: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .button:hover {
+            background-color: #85ade4; /* Violet plus foncé au survol */
+        }
+
+        .button:active {
+            transform: translateY(2px); /* Légère descente lors du clic */
+        }
+.logout-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+#AjouterProjet {
+    background-color: #f8f8f8;
+    padding: 30px;
+    position: relative;
+    top: 50px;
+    margin-top: -50px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    animation: slideInFromLeft 0.5s ease forwards; /* Animation d'entrée */
+    max-width: 400px; /* Définition de la largeur maximale */
+    margin: 0 auto; /* Centrage horizontal */
+}
+
+#AjouterProjet h2 {
+    color: #0070c9;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#AjouterProjet label {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+#AjouterProjet input[type="text"],
+#AjouterProjet textarea,
+#AjouterProjet input[type="number"] {
+    width: calc(100% - 20px); /* Largeur ajustée */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#AjouterProjet button[type="submit"] {
+    background-color: #0070c9;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#AjouterProjet button[type="submit"]:hover {
+    background-color: #005ea6;
+}
+
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.UserName {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, #4d1665, #0f77bc);
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 999;
+    animation: slideInFromLeft 0.8s ease forwards; /* Utilisation de l'animation */
+}
+
+
+.hidden {
+    opacity: 0; /* Rendre le texte transparent */
+}
+
+
+
+
+
+
+#fonction-container
+{
+    position: relative;
+    top: -200px;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#ModifierProfil {
+    background-color: #f8f8f8;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: -80px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    animation: slideInFromLeft 0.5s ease forwards;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#ModifierProfil h2 {
+    color: #0070c9;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#ModifierProfil label {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+#ModifierProfil input[type="text"],
+#ModifierProfil input[type="email"],
+#ModifierProfil input[type="file"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#ModifierProfil button[type="submit"] {
+    background-color: #0070c9;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#ModifierProfil button[type="submit"]:hover {
+    background-color: #005ea6;
+}
+
+#MesProjets {
+    background-color: #f8f8f8;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#MesProjets h2 {
+    color: #0070c9;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#MesProjets table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#MesProjets th, #MesProjets td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+#MesProjets th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+#MesProjets td button {
+    background-color: #0070c9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+#MesProjets td button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#MesProjets td button:hover {
+    background-color: #005ea6;
+}
+
+
+#photo_profile {
+    border-radius: 50%; /* Appliquer une forme de cercle à l'image */
+    width: 150px; /* Définir la largeur de l'image */
+    height: 150px; /* Définir la hauteur de l'image */
+    object-fit: cover; /* Assurer que l'image est entièrement couverte */
+    border: 2px solid #fff; /* Ajouter une bordure blanche */
+    box-shadow: 0 0 0 4px #007bff; /* Ajouter une ombre autour de l'image */
+    position: relative;
+    left: 650px;
+    top: -120px;
+}
+
+#photo_profile img {
+    position: absolute; /* Positionnement absolu par rapport au conteneur parent */
+    top: 30%; /* Positionner l'image à 50% de la hauteur du conteneur */
+    left: 50%; /* Positionner l'image à 50% de la largeur du conteneur */
+    transform: translate(-50%, -50%); /* Déplacer l'image de moitié de sa propre taille vers le haut et la gauche */
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+} 
+
+#ModifierProfil {
+    background-color: #f8f8f8;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+    animation: slideInFromLeft 0.5s ease forwards; /* Animation d'entrée */
+    position: relative;
+    margin-top: 30px;
+}
+
+#ModifierProfil h2 {
+    color: #0070c9;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#ModifierProfil label {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+#ModifierProfil input[type="text"],
+#ModifierProfil input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#ModifierProfil button[type="submit"] {
+    background-color: #0070c9;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#ModifierProfil button[type="submit"]:hover {
+    background-color: #005ea6;
+}
+
+/* Styles pour la section "Supprimer Mes Projets" */
+#SupprimerMesProjets {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 50px;
+}
+
+#SupprimerMesProjets h2 {
+    color: #0070c9;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#SupprimerMesProjets table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#SupprimerMesProjets th,
+#SupprimerMesProjets td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+#SupprimerMesProjets th {
+    background-color: #f2f2f2;
+}
+
+#SupprimerMesProjets td button[type="submit"] {
+    background-color: #dc3545;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#SupprimerMesProjets td button[type="submit"]:hover {
+    background-color: #c82333;
+}
+
+#SupprimerMesProjets .message {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+}

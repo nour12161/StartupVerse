@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('images/backC.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: flex-start; /* Aligner les éléments en haut */
+    height: 100vh;
+}
+
+/* Utilisation des mêmes styles que pour le formulaire de connexion */
+#insrci_start{
+    max-width: 400px;
+    margin: 50px; /* Espace entre les blocs */
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    position: relative;
+    top: -10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centrer le contenu */
+}
+
+#insrci_capital {
+    max-width: 400px;
+    margin: 50px; /* Espace entre les blocs */
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    position: relative;
+    left: 700px;
+    top: -950px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centrer le contenu */
+}
+
+#insrci_start h2,
+#insrci_capital h2 {
+    margin-bottom: 20px;
+}
+
+#insrci_start form,
+#insrci_capital form {
+    margin-bottom: 20px;
+}
+
+#insrci_start label,
+#insrci_capital label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#insrci_start input[type="text"],
+#insrci_start input[type="password"],
+#insrci_capital input[type="text"],
+#insrci_capital input[type="password"] {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+}
+
+#insrci_start button[type="submit"],
+#insrci_capital button[type="submit"] {
+    width: 60%;
+    padding: 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#insrci_start button[type="submit"]:hover,
+#insrci_capital button[type="submit"]:hover {
+    background-color: #cfc014;
+}
+
+a {
+    display: block;
+    text-align: center;
+    color: #742ae3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+

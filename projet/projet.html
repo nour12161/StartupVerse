@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="projetP.css">
+    <script src="projet.js" defer></script>
+</head>
+<body>
+    
+    <div id="insrci_start">
+        <form action="startuper.php" method="post" enctype="multipart/form-data">
+
+
+            <label for="nom">Nom</label>
+            <input name="nom" id="nom" type="text">
+            <label for="prenom">Prénom</label>
+            <input name="prenom" id="prenom" type="text">
+            <label for="cin">CIN</label>
+            <input name="cin" id="cin" type="text">
+            <label for="mail">E-mail</label>
+            <input name="mail" id="mail" type="text">
+            <label for="eName">Nom de l'entreprise</label>
+            <input name="eName" id="eName" type="text">
+            <label for="eAdresse">Adresse de l'entreprise</label>
+            <input name="eAdresse" id="eAdresse" type="text">
+            <label for="n_registre">N° du registre commercial</label>
+            <input name="n_registre" id="n_registre" type="text">
+            <label for="pseudo">Pseudo</label>
+            <input name="pseudo" id="pseudo" type="text">
+            <label for="mdp">Mot de passe</label>
+            <input name="mdp" id="mdp" type="password">
+            <label for="mdpVer">Retapez votre mot de passe</label>
+            <input name="mdpVer" id="mdpVer" type="password">
+            <label for="showPassword">Afficher le mot de passe</label>
+            <input type="checkbox" id="showPassword">
+            <label for="photo">Photo :</label>
+            <input type="file" id="photo" name="photo"><br>
+            <button type="submit" onclick=" s_inscrireC()">Continuer</button>
+        </form>
+    </div>
+
+    <div id="insrci_capital">
+        <form action="capital.php" method="post">
+            <label for="nomC">Nom</label>
+            <input name="nomC" id="nomC" type="text">
+            <label for="prenomC">Prénom</label>
+            <input name="prenomC" id="prenomC" type="text">
+            <label for="cinC">CIN</label>
+            <input name="cinC" id="cinC" type="text">
+            <label for="mailC">E-mail</label>
+            <input name="mailC" id="mailC" type="text">
+            <label for="pseudoC">Pseudo</label>
+            <input name="pseudoC" id="pseudoC" type="text">
+            <label for="mdpC">Mot de passe</label>
+            <input name="mdpC" id="mdpC" type="password">
+            <label for="mdpVerC">Retapez votre mot de passe</label>
+            <input name="mdpVerC" id="mdpVerC" type="password">
+            <button type="submit">Continuer</button>
+        </form>
+    </div>
+
+</body>
+</html>
+

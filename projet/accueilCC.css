@@ -1,0 +1,143 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/backCC.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Style pour les boutons */
+.button1, .button2{
+    background-color: #b8c6c1; /* Couleur de fond */
+    color: #0d32e7; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    padding: 15px 30px; /* Remplissage */
+    cursor: pointer; /* Curseur pointeur */
+    border-radius: 25px; /* Bordure arrondie */
+    transition: background-color 0.3s ease; /* Transition en douceur */
+    font-size: 16px; /* Taille de la police */
+    margin: 10px; /* Marge */
+    position: relative;
+    top: 270px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre */
+}
+
+.button1:hover, .button2:hover{
+    background-color: #85ade4; /* Couleur de fond au survol */
+}
+
+.button1:active, .button2:active{
+    transform: translateY(2px); /* Légère descente lors du clic */
+}
+
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.UserName {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, #4d1665, #0f77bc);
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 999;
+    animation: slideInFromLeft 0.8s ease forwards; /* Utilisation de l'animation */
+}
+
+.hidden {
+    opacity: 0; /* Rendre le texte transparent */
+}
+
+/* Style pour le bouton de déconnexion */
+.logout-container .button {
+    background-color: #b8c6c1; /* Couleur de fond */
+    color: #0d32e7; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    padding: 15px 30px; /* Remplissage */
+    cursor: pointer; /* Curseur pointeur */
+    border-radius: 25px; /* Bordure arrondie */
+    position: relative;
+    left: 1320px;
+    transition: background-color 0.3s ease; /* Transition en douceur */
+    font-size: 16px; /* Taille de la police */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre */
+}
+
+.logout-container .button:hover {
+    background-color: #85ade4; /* Couleur de fond au survol */
+}
+
+.logout-container .button:active {
+    transform: translateY(2px); /* Légère descente lors du clic */
+}
+/* Style pour le contenu de la section "Liste des Projets à Financer" */
+.fonction-container {
+    background-color: #f8f8f8; /* Couleur de fond */
+    padding: 30px; /* Remplissage */
+    border-radius: 10px; /* Bordure arrondie */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Ombre */
+    max-width: 800px; /* Largeur maximale */
+    margin: 0 auto; /* Centrage horizontal */
+    position: relative;
+    margin-top: 50px; /* Espacement par rapport au contenu précédent */
+}
+
+.fonction-container h2 {
+    color: #0070c9; /* Couleur du texte */
+    font-size: 24px; /* Taille de la police */
+    font-weight: bold; /* Gras */
+    margin-bottom: 20px; /* Marge inférieure */
+}
+
+.fonction-container p {
+    color: #333; /* Couleur du texte */
+    font-size: 16px; /* Taille de la police */
+}
+
+.fonction-container table {
+    width: 100%; /* Largeur de 100% */
+    border-collapse: collapse; /* Fusion des bordures de tableau */
+}
+
+.fonction-container th,
+.fonction-container td {
+    padding: 10px; /* Remplissage */
+    border-bottom: 1px solid #ddd; /* Bordure inférieure */
+    text-align: left; /* Alignement du texte à gauche */
+}
+
+.fonction-container th {
+    background-color: #f2f2f2; /* Couleur de fond */
+}
+
+.fonction-container td button[type="submit"] {
+    background-color: #0070c9; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    font-size: 14px; /* Taille de la police */
+    font-weight: bold; /* Gras */
+    padding: 8px 15px; /* Remplissage */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Bordure arrondie */
+    cursor: pointer; /* Curseur pointeur */
+    transition: background-color 0.3s ease; /* Transition en douceur */
+}
+
+.fonction-container td button[type="submit"]:hover {
+    background-color: #005ea6; /* Couleur de fond au survol */
+}
+
